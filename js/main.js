@@ -2,7 +2,7 @@ const scene = new THREE.Scene();
 const camera = new THREE.PerspectiveCamera(65, 800 / 800, 0.1, 1000);
 
 const renderer = new THREE.WebGLRenderer();
-renderer.setSize(window.innerWidth, window.innerHeight);
+renderer.setSize(800, 800);
 document.body.appendChild(renderer.domElement);
 
 const planeGeometry = new THREE.PlaneGeometry(7, 7);
@@ -15,8 +15,8 @@ camera.position.z = 35;
 function animate() {
   requestAnimationFrame(animate);
 
-  plane.position.x += 0.07;
-  plane.position.y += 0.07;
+  plane.position.x += 0.08;
+  plane.position.y += 0.08;
 
   renderer.render(scene, camera);
 }
