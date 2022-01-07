@@ -40,7 +40,7 @@ function animate() {
     plane.material.color.setRGB(Math.random(256), Math.random(256), Math.random(256));
   }
 
-  else if (plane.position.y < -20) {
+  if (plane.position.y < -20) {
     planeMovementSpeedY = 0.08;
     plane.position.y += planeMovementSpeedY;
     plane.material.color.setRGB(Math.random(256), Math.random(256), Math.random(256));
